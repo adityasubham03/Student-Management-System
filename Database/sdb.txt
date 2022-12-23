@@ -1,0 +1,24 @@
+CREATE TABLE student_records(
+Roll_No int REFERENCES student_marks(Roll_No),
+Name varchar(30) NOT NULL,
+Dob date,
+Admn_no int primary key,
+Gender char(1) NOT NULL,
+Father_name varchar(30)
+);
+
+CREATE TABLE student_marks(
+Roll_No int PRIMARY KEY,
+Chemistry int NOT NULL,
+Physics int NOT NULL,
+Maths int NOT NULL,
+Computer_Science int NOT NULL,
+English int NOT NULL
+);
+
+
+
+
+DELETE FROM student_records WHERE Admn_no=6359;
+
+"UPDATE student_records SET Name={} WHERE Admn_no={}".format(name,admn)

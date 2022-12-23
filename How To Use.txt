@@ -1,0 +1,10 @@
+First open the "Database" folder .
+Then edit "database-creation.py" and add your MySQL password in line number 2.
+Similarly open "insert-data.py" and add your MySQL password in line number 2.
+First run database-creation.py and then run insert-data.py.
+
+Then go to program and edit security.py then add your password of MySQL in line number 2.
+then close it. 
+Now open main.py and simply run it.
+
+Extra line
